@@ -1,0 +1,25 @@
+# AGENTE 2 — Receptor (receptor.py)
+
+## Mi tarea
+Rediseñar la UI del HMI receptor con estilo control room + editor de safe zone AR.
+
+## UI requerida
+### Panel principal
+- Indicador grande de estado (SEGURO / ALARMA) con animación de parpadeo
+- Timestamp del último evento
+- Historial de eventos (log con scroll)
+
+### Editor de Safe Zone (pestaña separada)
+- Grilla 3x3 interactiva sobre imagen de fondo (o frame estático de cámara)
+- Click en celda = toggle zona peligrosa/segura
+- Botón "Aplicar" que envía config de vuelta al emisor vía UDP (puerto 5006)
+- Visual: zonas peligrosas en rojo semitransparente, seguras en verde
+
+## Estilo
+Fondo negro, tipografía monospace, indicadores LED, rojo/verde para alarmas.
+Título: "HMI — CONTROL DE SEGURIDAD"
+
+## Restricciones
+- Mantener WorkerRed como QThread
+- Puerto de escucha: 5005
+- Puerto de configuración saliente: 5006

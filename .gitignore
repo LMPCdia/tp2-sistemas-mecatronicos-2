@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.claude/
+Include/
+CodigosV2.rar
